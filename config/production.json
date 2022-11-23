@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "",
+  "mongoURI": "mongodb+srv://squashSiteAdmin:iamadminahmad@cluster0.hjf90u7.mongodb.net/?retryWrites=true&w=majority"
+}

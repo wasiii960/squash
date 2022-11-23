@@ -1,0 +1,42 @@
+{
+  "name": "squashsite_server",
+  "version": "1.0.0",
+  "description": "A MS and social media platform for the squash players, coaches and other stake holders",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadTahir999/SquashSite_server.git"
+  },
+  "author": "FLYNN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AhmadTahir999/SquashSite_server/issues"
+  },
+  "homepage": "https://github.com/AhmadTahir999/SquashSite_server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "cron": "^2.1.0",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.8",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
+  }
+}
